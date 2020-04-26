@@ -1,0 +1,75 @@
+# GPS Cobalt60 source
+#
+# Introduction:
+# 60Co emits 2 gammas in coincidence, one of 1.33 MeV and one of 1.17 MeV energy
+# In many cases, "pile-up" of these 2 photons in the detector in a single event 
+# can be neglected. Examples are:
+# - if the detector is reasonably far from the 60Co source
+# - if no "event-by-event" analysis is needed (only cumulative effects are studied)
+# In this cases, the source can be described as 2 separate sources: one at 1.33 MeV, 
+# the other at 1.17 MeV
+#
+# There are 2 options for the modelling of the source:
+# 1. The 2 gamma lines can be modelled separately.
+#    The simulations results can be combined as post-processing 
+# 2. The 2 gamma lines can be modelled together.
+#    GPS will randonly select one or the other, depending on the relative intensity
+#
+# Description:
+# - Point source, centred in (0.,35.,0.) cm
+# - Monoenergetic lines: 1.17 MeV or 1.33 MeV
+# - Isotropic emission, 4PI
+
+# Modelling of 2 sources in parallel for the 2 gamma lines here:
+
+# Optional:
+# execute macro for advanced visualisation
+# NB: to be executed only once during simulation, otherwise the program will crash
+#
+# /control/execute vis_cobalt60_2sources.g4mac
+
+# First 60Co line at 1.17 MeV
+
+# Particle type
+/gps/particle gamma
+
+# Energy
+/gps/ene/type Mono
+/gps/ene/mono 1.17 MeV
+
+# Position
+/gps/pos/type Point
+/gps/pos/centre 0. 35. 0. cm
+
+# Angular distribution: 
+/gps/ang/type iso
+/gps/ang/minphi     0. deg
+/gps/ang/maxphi   360. deg
+/gps/ang/mintheta   0. deg
+/gps/ang/maxtheta 180. deg
+
+/gps/source/intensity 1.
+
+# Second 60Co line at 1.33 MeV
+
+/gps/source/add 1.
+
+# Particle type
+/gps/particle gamma
+
+# Energy
+/gps/ene/type Mono
+/gps/ene/mono 1.33 MeV
+
+# Position
+/gps/pos/type Point
+/gps/pos/centre 0. 25. 0. cm
+
+# Angular distribution: 
+/gps/ang/type iso
+/gps/ang/minphi     0. deg
+/gps/ang/maxphi   360. deg
+/gps/ang/mintheta   0. deg
+/gps/ang/maxtheta 180. deg
+
+#
