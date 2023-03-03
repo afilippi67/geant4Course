@@ -1,0 +1,12 @@
+<gxml>
+
+	<volume 
+               name="RiggedHand_vol" 
+               color="ffe4e1" 
+               material="G4_Fe" 
+               position="-10.*cm 10.*cm 0.*mm" 
+               sensitivity="flux" 
+               hitType="flux" 
+               identifiers="id manual 1"/>
+
+</gxml>
