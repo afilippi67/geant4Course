@@ -1,8 +1,10 @@
 <gxml>
 
 	<volume name="eyeball"  
-                material="G4_Pb" 
-                sensitivity="flux" hitType="flux" 
+	        color="E0FFFF"
+                material="G4_WATER" 
+                sensitivity="flux" 
+		hitType="flux" 
                 identifiers="id manual 1"  />
 
 
