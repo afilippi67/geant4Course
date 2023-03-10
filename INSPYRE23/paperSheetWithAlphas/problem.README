@@ -1,0 +1,15 @@
+Problem:
+
+- build an A4 sheet of paper with dimensions l = 21 cm, w = 0.05 mm, h = 29.7 cm, put its center at  (0, 0, 40) cm make the volume sensitive.
+For the paper material create a cellulose with the formula: C6H10O5
+
+- generate a beam of 300 and 100 KeV neutrons directed along +z axis:
+o from the point (0,0,0) m
+o make the beam pencil-like with a cross section of radius 1 cm
+o generate one event at a time
+
+- generate a beam of alpha particles with 1 GeV, and find approximately the minimum energy for which the tracking works
+- do you see any divergence of the beam?
+- change the physics card for low energy processes: EMZ + QGSP_BIC_HP
+
+- make the source isotropic from (0, 0, 0)
