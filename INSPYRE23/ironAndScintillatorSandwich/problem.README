@@ -1,0 +1,12 @@
+Problem:
+
+- build a (sort-of) hadronic calorimeter made of 6 plates, interleaved, of dimension x = 2 m, y = 3 m, with center in (0,0), of
+o Iron, width = 6 mm, make it sensitive
+o plastic scintillator, width = 3 cm, make it sensitive
+
+- the first layer encountered by the beam is a scintillator layer, and its face is located at z=30 cm
+
+- generate a beam of 100 MeV charged (muons, for instance) and neutral 
+(gamma, for instance) particles, generated for the point at (0,0,2) m, along the negative z axis
+
+- try with a 12C ion beam
