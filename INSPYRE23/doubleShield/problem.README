@@ -1,0 +1,12 @@
+Problem:
+
+- build a shield divided into two parts with the same thickness and dimensions l = 0.5 m, w = 5 mm, h = 0.8 m: one of Lead, the second of Aluminum. Choose different colors, put their center symmetrical with respect to z such that the two layers touch, set them at z = 30 cm, make both the volumes sensitive
+
+- generate a beam with an opening angle theta of 45 degrees, isotropic in phi,
+directed towards +z axis, along a conical surface, from the point (0,0,0) m
+o of 1 GeV electrons 
+o of 100 MeV electrons
+
+- change the physics card for Electromagnetic reactions
+o generate photons of 1 GeV and 100 KeV
+

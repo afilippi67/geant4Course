@@ -1,0 +1,12 @@
+Problem:
+
+- build a wall full of concrete with dimensions l = 1 m, w= 0.5 m, h = 2 m, make the volume sensitive
+
+- generate a beam of 10 GeV neutrons directed along -z axis:
+o from the point (0,0, 3 m)
+o make the beam pencil-like with a cross section of radius 1 cm
+
+- lower the energy to 1 GeV, 100 MeV, 10 MeV 
+
+- change the particles
+

@@ -1,0 +1,16 @@
+<gcard>
+	<detector name="example" factory="TEXT" variation="original"/>
+	<option name="geometry" value="600x600"/>
+	
+	<option name="INTEGRATEDRAW" value="flux"/>	
+	
+	<option name="BEAM_P" value="gamma, 100.*MeV, 22.5*deg, 0*deg"/>
+	<option name="BEAM_V" value="(0., 0., 0.)m"/>
+	<option name="SPREAD_P"  value="0.*GeV, 22.5*deg, 180*deg"/>
+	<option name="SPREAD_V"  value="(0., 0.)mm"/>
+
+	<option name="OUTPUT" value="txt, out.txt"/>
+	<option name="SAVE_ALL_MOTHERS" value="1"/>
+	
+	<option name="PHYSICS" value="EMZ + QGSP_BIC_HP"/>
+</gcard>

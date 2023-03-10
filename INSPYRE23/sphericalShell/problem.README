@@ -1,0 +1,19 @@
+Problem:
+
+- build a hollow sphere of lead with radius 5 cm, thickness 5 mm, make the 
+volume sensitive
+- fill the hollow part of the sphere with air, make the volume sensitive
+
+- generate a beam of 1 GeV protons 
+o isotropically emitted  from the center of the sphere
+o emitted from the point (0., 0., 20 cm) towards -z
+
+- fill the hollow with Helium or vacuum G4_Galactic
+
+
+- change the particles and see what happens! try with 1 GeV
+o electrons
+o photons
+o positrons
+o alphas
+
