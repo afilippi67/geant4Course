@@ -1,0 +1,19 @@
+<gcard>
+
+	<option name="geometry" value="800x800"/>
+
+        <detector name="appendix" factory="TEXT" variation="original" />
+	<detector name="../cadIntestines/"    factory="CAD"/>
+
+	<option name="INTEGRATEDRAW" value="flux"/>	
+	<option name="BEAM_P" value="gamma, 100*KeV, 180*deg, 0*deg"/>
+
+	<option name="SPREAD_V" value="(1., 0)cm"/>
+	<option name="BEAM_V" value="(1.0, -7., 100)cm"/>
+
+	<option name="OUTPUT" value="txt, out.txt"/>
+	<option name="PHYSICS" value="EMZ + QGSP_BIC_HP" />
+
+        <option name="SAVE_ALL_MOTHERS" value="1"/>	
+
+</gcard>

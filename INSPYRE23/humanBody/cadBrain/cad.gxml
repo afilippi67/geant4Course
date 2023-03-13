@@ -1,0 +1,21 @@
+<gxml>
+
+	<volume name="brain" 
+	color="8899dd" 
+	material="G4_Pb"
+        position="-3.*cm -155.*cm -5.*cm"
+	rotation="90*deg 0*deg 0*deg"
+	sensitivity="flux" 
+	hitType="flux" identifiers="id manual 1" />
+
+        <volume name="brain2"
+        color="8899de"
+        material="G4_WATER"
+        position="-10.*cm -155.*cm -5.*cm"
+        rotation="270*deg 0*deg 180*deg"
+        sensitivity="flux"
+        hitType="flux" identifiers="id manual 2" />
+
+
+	
+</gxml>
