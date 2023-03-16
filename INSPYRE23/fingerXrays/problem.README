@@ -1,0 +1,13 @@
+Problem:
+build a (sort-of) finger made in the following way:
+- two coaxial vertical cylinders (axis parallel to y axis):
+o internal bone: radius 0.5 cm, full height 9 cm, material G4_BONE_COMPACT_ICRU
+o external flesh: thickness 3 mm, height 10 cm (slightly longer), material G4_MUSCLE_SKELETAL_ICR 
+- add a film of photographic emulsion, 30 cm x 30 cm x 0.2 mm, material G4_PHOTO_EMULSION, place it at 5 cm from the finger  
+
+Beam: prepare a beam with circular cross section of 2 cm radius, coming from far away (say, 50 cm away), perpendicular to the screen 
+- switch on standard STD EM physics processes
+o simulate a 300 keV photon beam 
+o simulate a 12C ion beam of 3 GeV (energy per nucleon?)
+o simulate a realistic medical x-ray beam: switch on low energy phsics process, FTFP_BERT + PEN, simulate 100 KeV photons with a spread on 25 keV in energy
+
