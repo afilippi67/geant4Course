@@ -1,0 +1,30 @@
+<gcard>
+	<detector name="example" factory="TEXT" variation="original"/>
+	<option name="geometry" value="600x600"/>
+	
+	<option name="INTEGRATEDRAW" value="flux"/>	
+	
+	<option name="BEAM_P" value="e-, 0.317*MeV, 90*deg, 0*deg"/>
+	<option name="BEAM_V" value="(0., 0., 0.0)cm"/>
+	<option name="SPREAD_P"  value="0.*GeV, 180*deg, 180*deg"/>
+	<option name="SPREAD_V"  value="(0., 0.)mm"/>		
+
+        <option name="LUMI_EVENT" value="1, 2*ns, 1*ns"/>
+        <option name="LUMI_P" value="proton, 1.33*MeV, 0*deg, 0*deg"/>
+        <option name="LUMI_V" value="(0., 0., -2.0)cm"/>
+        <option name="LUMI_SPREAD_P"  value="0.*GeV, 90*deg, 180*deg"/>
+        <option name="LUMI_SPREAD_V"  value="(1.,0.)cm"/>
+
+ 
+        <option name="LUMI2_EVENT" value="1, 2*ns, 1.*ns"/>
+        <option name="LUMI2_P" value="neutron, 1.17*MeV, 0*deg, 0*deg"/>
+        <option name="LUMI2_V" value="(0., 0., +2.0)cm"/>
+        <option name="LUMI2_SPREAD_P"  value="0.*GeV, 90*deg, 180*deg"/>
+        <option name="LUMI2_SPREAD_V"  value="(1.,0.)cm"/>
+
+
+	<option name="OUTPUT" value="txt, out.txt"/>
+	<option name="SAVE_ALL_MOTHERS" value="1"/>
+	
+	<option name="PHYSICS" value="STD + FTFP_BERT"/>
+</gcard>
