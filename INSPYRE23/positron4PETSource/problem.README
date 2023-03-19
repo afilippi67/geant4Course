@@ -1,0 +1,13 @@
+Problem:
+
+- build a sphere full of Water with radius 2 mm, make the volume sensitive
+
+- generate a source (beam of zero energy) of 18F (A=18 Z=9 ions) distributed 
+isotropically in the full sphere, let it decay following beta+ decay and
+subsequent positron annihilation in 2 gammas. GEANT4 knows what to do: but you
+must activate the RadioActiveDecay process, so you need to run a special
+version of gemc. Do do this, you must add a . (which means: run the version you
+find in this directory):
+>  ./gemc example.gcard
+
+

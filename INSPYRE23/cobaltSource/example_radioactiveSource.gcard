@@ -1,0 +1,21 @@
+<gcard>
+	<detector name="example" factory="TEXT" variation="original"/>
+	<option name="geometry" value="600x600"/>
+	
+	<option name="INTEGRATEDRAW" value="flux"/>	
+	
+	<option name="ION_P" value="27 60" />
+	<option name="BEAM_P" value="GenericIon, 0.*MeV, 0*deg, 0*deg"/>
+	<option name="BEAM_V" value="(0., 0., 0.0)cm"/>
+	<option name="SPREAD_P"  value="0.*GeV, 180*deg, 180*deg"/>
+	<option name="SPREAD_V"  value="(5., 5.)mm"/>		
+
+	<option name="OUTPUT" value="txt, out.txt"/>
+	<option name="SAVE_ALL_MOTHERS" value="1"/>
+	<option name="G4TRACK_VERBOSITY" value="2" />
+	<option name="PHYSICS" value="STD + FTFP_BERT"/>
+
+
+
+
+</gcard>

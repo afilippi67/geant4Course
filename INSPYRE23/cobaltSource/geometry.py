@@ -9,7 +9,7 @@ def makeGeometry(configuration):
 	# A non-zero inner radius will produce a hollow tube.  The angles allow for an angular cut in the cross section
 	detector.type        = "Sphere"
 	detector.dimensions = "0.*cm  5.*mm  0*deg 360*deg 0*deg 180*deg"
-	detector.material   = "G4_Co"	# G4_Si is a GEANT4 defined element name
+	detector.material   = "G4_AIR"	# G4_Si is a GEANT4 defined element name
 							# When using only built-in materials, a separate materials file is not needed
 	detector.visible = 1			# 1 to display volume with the full geometry, 0 to leave hidden
 	detector.style = 1			    # 1 displays volume as a solid, 0 displays as wireframe
