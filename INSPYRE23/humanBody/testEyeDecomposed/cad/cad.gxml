@@ -2,8 +2,9 @@
 
 
 	<volume name="cornea"  
-	        color="FFFFFF4"
+	        
                 material="G4_WATER" 
+		color="f8f8ff3"
                 sensitivity="flux" 
 		hitType="flux"
 	        style="1"	 
