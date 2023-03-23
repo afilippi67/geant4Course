@@ -1,0 +1,21 @@
+
+# Configuration file for example
+
+# Detector name and variation
+detector_name: eyeParts
+variation:     original
+
+# Factory can be TEXT (only TEXT is supported by the api currently)
+factory:       TEXT 
+
+# run ranges and variation will apply to geometry, materials and parameters
+rmin:       1
+rmax:       10000
+
+# Comments/Description
+comment:       GDML solids for some parts on the eye
+
+# Verbosity controls the script output
+verbosity: 2
+
+
