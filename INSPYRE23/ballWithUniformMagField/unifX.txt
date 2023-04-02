@@ -1,0 +1,5 @@
+<mfield>
+	<description name="unifX" factory="TEXT" comment="uniform B field 10 T along X axis" />
+	<symmetry type="uniform" format="simple"  />
+	<dimension bx="0.25" by="0" bz="0"  units="T" />
+</mfield>
