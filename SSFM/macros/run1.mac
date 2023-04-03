@@ -1,0 +1,13 @@
+# $Id: run1.mac 123 2008-07-02 17:09:27Z maire $
+# 
+# can be run in batch, without graphic
+# or interactively: Idle> /control/execute run1.mac
+#
+/control/verbose 2
+/run/verbose 2
+#
+/gun/particle proton
+/gun/energy 500 MeV
+#
+/vis/drawVolume
+/run/beamOn 1000

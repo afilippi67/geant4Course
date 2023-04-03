@@ -1,0 +1,36 @@
+# Advanced visualisation options for the GPS Cobalt60 source
+#
+# From the tutorial by Joseph Perl (SLAC National Accelerator Lab)
+# available at http://geant4.slac.stanford.edu/Presentations/vis/G4VisAdvanced.ppt
+
+#/vis/viewer/zoomTo 5
+/vis/viewer/set/style wireframe
+
+# 1. Draw by attribute
+#    Draw photon tracks with colour set by energy (momentum, actually)
+#    Threshold energy intervals set to 1.2 MeV, so the 2 lines have different colours
+
+/vis/modeling/trajectories/create/drawByAttribute
+
+/vis/modeling/trajectories/drawByAttribute-0/setAttribute IMag
+
+/vis/modeling/trajectories/drawByAttribute-0/addInterval interval1 0.0 MeV 1.2 MeV
+/vis/modeling/trajectories/drawByAttribute-0/addInterval interval2 1.2 MeV 2 MeV
+
+/vis/modeling/trajectories/drawByAttribute-0/interval1/setLineColourRGBA 0.0 0.4 0.0 1
+#/vis/modeling/trajectories/drawByAttribute-0/interval1/setLineColour Cyan
+/vis/modeling/trajectories/drawByAttribute-0/interval2/setLineColourRGBA 1.0 1.0 0.0 1
+
+# 2. Filter by momentum
+#    Draw only photon tracks with momentum greater than 1.2 MeV/c
+#/vis/filtering/trajectories/create/attributeFilter
+#/vis/filtering/trajectories/attributeFilter-0/setAttribute IMag
+#/vis/filtering/trajectories/attributeFilter-0/addInterval 1.2 MeV 1000 MeV
+
+# 3. Filter by particle type
+#    Only draw secondary electron tracks
+#/vis/filtering/trajectories/create/particleFilter
+#/vis/filtering/trajectories/particleFilter-0/add e-
+
+# 
+/run/beamOn 1000
