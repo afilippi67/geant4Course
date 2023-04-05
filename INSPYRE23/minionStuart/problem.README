@@ -1,0 +1,42 @@
+Stuart under cosmic rays shower
+
+Prepare a geometric representation of the Stuart minion according to the 
+following prescriptions:
+
+- body: full cylinder with radius 50 cm, full height 3 feet 7 in (convert!), 
+center in (0,0,0)
+- head: half ellipsoid with semi-axes 50, 50, 35 cm on top of the cylinder
+- belly: as the head but at the bootom of the cylinder
+- arms: cylinder rotated 90 deg wrt to x axis, 13 cm radius, 80 cm lenght, 
+center in (0, 0, 10) cm
+- hands: two spheres at the two extremities of the arms cylinder, symmetric wrt
+to center, radius 12 cm, located at (0, +- 85, 10) cm
+- legs: two vertical cylinders, symmetrically disposed wrt to y axis, 
+radius 12 cm, 20*2 cm long, center located at (0, +-25, -80) cm
+- foot: 2 boxes below the legs, with dimensions 20*12*5 cm, with centers in
+(10, +-25, -105) cm
+- google: cylinder with axis parallel to x axis (rotation: 90*deg 90*deg 0*deg), 
+radius 25 cm, height 2*6 cm, center in (52, 0, 25) cm
+- google border: tube coaxial to google, axis paraller to x, thickness 2 cm,
+12 cm long, material: aluminum
+- eye: very flat cylinder with 10 cm radius, 1 cm height, coaxial to google
+volume, center in (58, 0, 25) cm
+- mouth: ellipsoid with semiaxes 15, 200, 60 cm, section with z from -60 to 
+-35 cm, center in *50, 0, 20) cm - it will be dug from the minion's body
+
+- operate boolean union/subtraction volumes to create macrovolumes in the 
+following way (in subsequent steps of two at a time):
+o minionBottom: belly + leg1 + leg2; set the color of the full volume as blue
+o minionBody: body - mouth
+o minionBody3: minionBody + head + arms; set the color of the full volume as 
+yellow
+
+- material: 
+define the new material "banana" with 4 components weighted as follows:
+water 75%, sugar (sucrose) 23 %, fibers (carbon) 1%, potassium 1%
+all volumes are made of banana except the Aluminum google border
+
+- beam:
+generate cosmic rays  with default spatial distribution in a volume centered
+in (0, 0, 0) with 5 m radius, in the energy range 1-10 GeV 
+  

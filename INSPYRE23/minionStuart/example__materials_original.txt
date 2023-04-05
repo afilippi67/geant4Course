@@ -2,3 +2,4 @@
                water  |                water material  |     1.000  |         2  |                                           H 2 O 1  | none  | none  | none  | none  | none  | none  | none  |   -1  |   -1  |   -1  |   -1  |   -1  | none  
               my_air  |                  homemade air  |  0.001290  |         2  |                                 G4_N 0.7 G4_O 0.3  | none  | none  | none  | none  | none  | none  | none  |   -1  |   -1  |   -1  |   -1  |   -1  | none  
            my_lucite  |        plexiglass with optics  |      1.19  |         1  |                                 G4_PLEXIGLASS 1.0  |1.77*eV 6.2*eV  |1.5 1.5  | none  | none  | none  | none  | none  |   -1  |   -1  |   -1  |   -1  |   -1  | none  
+              banana  |                        banana  |      1.10  |         4  | G4_WATER 0.75 G4_SUCROSE 0.23 G4_C 0.01 G4_K 0.01  | none  | none  | none  | none  | none  | none  | none  |   -1  |   -1  |   -1  |   -1  |   -1  | none  

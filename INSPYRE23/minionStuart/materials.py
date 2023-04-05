@@ -35,10 +35,19 @@ def define_materials(configuration):
 		ncomponents="2",  components="G4_N 0.7 G4_O 0.3")
 	print_mat(configuration, my_air);
 
-	# Redefine an existing material
-	# MyAir
+	# Lucite definition
 	my_lucite = MyMaterial(name="my_lucite", description="plexiglass with optics", density="1.19",
 		ncomponents="1",  components="G4_PLEXIGLASS 1.0")
 	my_lucite.photonEnergy = "1.77*eV 6.2*eV"
 	my_lucite.indexOfRefraction = "1.5 1.5"
 	print_mat(configuration, my_lucite);
+	
+	# banana
+	banana = MyMaterial(name="banana", description="banana", 
+	density="1.10",
+	ncomponents="4", 
+	components="G4_WATER 0.75 G4_SUCROSE 0.23 G4_C 0.01 G4_K 0.01")
+	print_mat(configuration, banana);
+	
+	
+	
