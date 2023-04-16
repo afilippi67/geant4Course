@@ -1,0 +1,15 @@
+<gcard>
+	<detector name="example" factory="TEXT" variation="original"/>
+	<option name="geometry" value="600x600"/>
+	
+	<option name="INTEGRATEDRAW" value="flux"/>	
+	
+	<option name="BEAM_P" value="typeOfParticle, momentum*GeV, angleWRTz*deg, phiAngle*deg"/>
+	<option name="BEAM_V" value="(vertexX, vertexY, vertexZ)cm"/>
+	<option name="SPREAD_P"  value="spreadP*GeV, deltaTheta*deg, deltraPhi*deg"/>
+	
+	<option name="OUTPUT" value="txt, out.txt"/>
+	<option name="SAVE_ALL_MOTHERS" value="1"/>
+	
+	<option name="PHYSICS" value="STD + FTFP_BERT"/>
+</gcard>

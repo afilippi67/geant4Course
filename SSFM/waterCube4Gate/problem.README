@@ -1,0 +1,7 @@
+Replicate in gemc framework the first exercise of the GATE list:
+- setup a (semitransparent) water box of dimensions 10x10x10 cm3 located at (0, 0, 0) cm in the world volume 
+- place a yellow detector of lead of dimensions 3x3x3 cm3 located at (2, 2, 3) cm in the water volume
+- place a red planar lead detector of dimensions 10x10x0.2 cm3 located at (0, 0, -20) cm in the world volume
+- make detector volumes sensitive
+
+Beam: 1 MeV gamma source with emstandard_opt3: circular beam from (0, 0, 20) cm, radius = 8 mm BUT focussed in (0, 0, 10) cm (which implies a conical distribution, with opening angle? calculate: 0.38 deg) 
