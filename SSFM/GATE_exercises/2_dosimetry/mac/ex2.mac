@@ -67,9 +67,9 @@
 /gate/actor/dose3d/saveEveryNSeconds     60
 /gate/actor/dose3d/enableEdep            true
 /gate/actor/dose3d/enableUncertaintyEdep true
-/gate/actor/dose3d/enableDose            false
-/gate/actor/dose3d/enableUncertaintyDose false
-/gate/actor/dose3d/enableNumberOfHits    false
+/gate/actor/dose3d/enableDose            true
+/gate/actor/dose3d/enableUncertaintyDose true
+/gate/actor/dose3d/enableNumberOfHits    true
 
 /gate/actor/addActor                        DoseActor  depthdose
 /gate/actor/depthdose/save                  output/depth-pat.txt
