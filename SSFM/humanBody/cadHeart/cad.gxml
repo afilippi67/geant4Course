@@ -1,0 +1,12 @@
+<gxml>
+
+	<volume name="heart" 
+	color="dc143c" 
+	material="G4_MUSCLE_STRIATED_ICRU"
+	position="6.*cm 10.*cm -120.*cm"
+        rotation="0*deg 0*deg 90*deg" 
+	sensitivity="flux" 
+	hitType="flux" 
+	identifiers="id manual 1"/>
+
+</gxml>

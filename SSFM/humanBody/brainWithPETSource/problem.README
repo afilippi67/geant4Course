@@ -1,0 +1,16 @@
+Problem:
+
+- build a (half)brain setup using the cad model in ../cad_brain
+- generate a proton beam of 1 GeV from (0, 0, -50) cm along the -z axis to find
+the coordinate of a hit in the cerebral cortex
+
+- now change the source: from the point found in the previous step place a source of 18F as done in the exercise positron4PETSource. Run the local version
+of gemc (./gemc     brainWPETSource.gcard)
+
+- generate one event and see what happens
+- generate 100 events and see what happens
+- try to fill the brain with water: you can set G4_WATER as the material of the 
+hall setting the HALL_MATERIAL option in the gcard file
+
+
+
