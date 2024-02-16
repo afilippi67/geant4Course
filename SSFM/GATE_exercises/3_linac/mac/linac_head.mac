@@ -64,7 +64,7 @@
 /gate/kill_box_top/geometry/setRmax             30 mm
 /gate/kill_box_top/geometry/setHeight           20 mm
 /gate/kill_box_top/placement/setTranslation     0.0 0.0 21 mm
-/gate/kill_box_top/vis/setVisible               0
+/gate/kill_box_top/vis/setVisible               1
 
 /gate/linac/daughters/name                      kill_box_bottom
 /gate/linac/daughters/insert                    cylinder
@@ -73,7 +73,7 @@
 /gate/kill_box_bottom/geometry/setRmax          30 mm
 /gate/kill_box_bottom/geometry/setHeight        21.5 mm
 /gate/kill_box_bottom/placement/setTranslation  0.0 0.0 0.25 mm
-/gate/kill_box_bottom/vis/setVisible            0
+/gate/kill_box_bottom/vis/setVisible            1
 
 /gate/linac/daughters/name                      kill_box_bottom2
 /gate/linac/daughters/insert                    cylinder
@@ -82,4 +82,4 @@
 /gate/kill_box_bottom2/geometry/setRmax         50 cm
 /gate/kill_box_bottom2/geometry/setHeight       21.5 mm
 /gate/kill_box_bottom2/placement/setTranslation 0.0 0.0 0.25 mm
-/gate/kill_box_bottom2/vis/setVisible           0
+/gate/kill_box_bottom2/vis/setVisible           1

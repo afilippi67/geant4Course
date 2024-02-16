@@ -9,7 +9,7 @@
 /gate/ionizing_chamber/geometry/setRmax         45 mm
 /gate/ionizing_chamber/geometry/setHeight       9.28 mm
 /gate/ionizing_chamber/placement/setTranslation 0.0 0.0 -169 mm
-/gate/ionizing_chamber/vis/setVisible           0
+/gate/ionizing_chamber/vis/setVisible           1
 
 	/gate/ionizing_chamber/daughters/name                        ionizing_chamber_mylar_1ayer1
 	/gate/ionizing_chamber/daughters/insert                      cylinder
