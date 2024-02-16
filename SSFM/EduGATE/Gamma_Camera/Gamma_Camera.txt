@@ -1,0 +1,14 @@
+ViewPointThetaPhi: 0 90; 90 0; -90 0; 89 90;
+VisuOnOff: novisu; visu;
+SourceActivity: 10000. Bq; 100 Bq; 1000. Bq; 100000. Bq;
+CameraType: camera_Tc; camera_I_131;
+x_placement: 20.0;
+CollimatorMaterial: Lead; Vacuum; Air; Copper; Iron; Tungsten; Plexiglass;
+CrystalMaterial: NaI; BGO; LSO; GSO; PWO; LuAP; YAP; CZT;
+PhantomMaterial: Plexiglass; Water; Air; Vacuum; Lead; PVC; Copper; Tungsten; Molybdenum;
+PhanRmax: 50.0 mm; 52.0 ; 54.0 ;
+PhanRmin: 49.5 mm; 48.0 mm; 45.0 mm; 40.0 mm;
+SourceVolMaterial: Plexiglass; Air; Water; Vacuum; PVC;
+SourceType: sources_gamma_3; sources_Y90_histo; sources_gamma; sources_electron; sources_ion; sources_positron; sources_electron_2;
+SourceEnergy: 140 keV; 364 keV; 511 keV; 1000 keV; 2284 keV;
+RootFileName: Gamma_Camera_{SourceType};

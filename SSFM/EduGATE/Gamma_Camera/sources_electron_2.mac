@@ -1,0 +1,64 @@
+#
+#	S O U R C E S
+#
+
+# source: electron
+/gate/source/addSource 						ElectronSource1
+
+/gate/source/ElectronSource1/gps/type		Volume
+/gate/source/ElectronSource1/gps/shape		Sphere
+/gate/source/ElectronSource1/gps/radius		0.125 mm
+
+/gate/source/ElectronSource1/gps/centre 		0. 0. 5. cm
+/gate/source/ElectronSource1/gps/particle	e-
+/gate/source/ElectronSource1/gps/energytype 	Mono
+/gate/source/ElectronSource1/gps/monoenergy 	{SourceEnergy}
+/gate/source/ElectronSource1/setActivity 	{SourceActivity}
+
+/gate/source/ElectronSource1/gps/angtype		iso
+#/gate/source/ElectronSource1/gps/mintheta	60. deg
+#/gate/source/ElectronSource1/gps/maxtheta 	120. deg
+#/gate/source/ElectronSource1/gps/minphi 	150. deg
+#/gate/source/ElectronSource1/gps/maxphi 	210. deg
+
+/gate/source/ElectronSource1/gps/mintheta	89. deg
+/gate/source/ElectronSource1/gps/maxtheta 	91. deg
+/gate/source/ElectronSource1/gps/minphi 		179. deg
+/gate/source/ElectronSource1/gps/maxphi 		181. deg
+
+#/gate/source/ElectronSource1/gps/mintheta	0. deg
+#/gate/source/ElectronSource1/gps/maxtheta 	180. deg
+#/gate/source/ElectronSource1/gps/minphi 	0. deg
+#/gate/source/ElectronSource1/gps/maxphi 	360. deg
+
+/gate/source/addSource 						ElectronSource2
+
+/gate/source/ElectronSource2/gps/type		Volume
+/gate/source/ElectronSource2/gps/shape		Sphere
+/gate/source/ElectronSource2/gps/radius		0.125 mm
+
+/gate/source/ElectronSource2/gps/centre 		0. 0. -5. cm
+/gate/source/ElectronSource2/gps/particle	e-
+/gate/source/ElectronSource2/gps/energytype 	Mono
+/gate/source/ElectronSource2/gps/monoenergy 	{SourceEnergy}
+/gate/source/ElectronSource2/setActivity 	{SourceActivity}
+
+/gate/source/ElectronSource2/gps/angtype		iso
+#/gate/source/ElectronSource2/gps/mintheta	60. deg
+#/gate/source/ElectronSource2/gps/maxtheta 	120. deg
+#/gate/source/ElectronSource2/gps/minphi 	150. deg
+#/gate/source/ElectronSource2/gps/maxphi 	210. deg
+
+/gate/source/ElectronSource2/gps/mintheta	89. deg
+/gate/source/ElectronSource2/gps/maxtheta 	91. deg
+/gate/source/ElectronSource2/gps/minphi 		179. deg
+/gate/source/ElectronSource2/gps/maxphi 		181. deg
+
+#/gate/source/ElectronSource2/gps/mintheta	0. deg
+#/gate/source/ElectronSource2/gps/maxtheta 	180. deg
+#/gate/source/ElectronSource2/gps/minphi 	0. deg
+#/gate/source/ElectronSource2/gps/maxphi 	360. deg
+
+/gate/source/list
+
+/gate/source/ElectronSource1/gps/confine source_vol

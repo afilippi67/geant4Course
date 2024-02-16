@@ -1,0 +1,27 @@
+
+#
+#	S O U R C E S
+#
+
+# source: positron
+/gate/source/addSource 						PositronSource
+
+/gate/source/PositronSource/gps/type		Volume
+/gate/source/PositronSource/gps/shape		Sphere
+/gate/source/PositronSource/gps/radius		0.125 mm
+
+/gate/source/PositronSource/gps/centre 		0. 0. 0. cm
+/gate/source/PositronSource/gps/particle	e+
+/gate/source/PositronSource/gps/energytype 	Mono
+/gate/source/PositronSource/gps/monoenergy 	{SourceEnergy}
+/gate/source/PositronSource/setActivity 	{SourceActivity}
+
+/gate/source/PositronSource/gps/angtype		iso
+/gate/source/PositronSource/gps/mintheta	60. deg
+/gate/source/PositronSource/gps/maxtheta 	120. deg
+/gate/source/PositronSource/gps/minphi 		150. deg
+/gate/source/PositronSource/gps/maxphi 		210. deg
+
+/gate/source/list
+
+/gate/source/PositronSource/gps/confine		source_vol

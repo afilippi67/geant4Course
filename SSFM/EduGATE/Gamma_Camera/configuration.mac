@@ -1,0 +1,14 @@
+/control/alias ViewPointThetaPhi  0 90
+/control/alias VisuOnOff  novisu
+/control/alias SourceActivity  10000. Bq
+/control/alias CameraType  camera_Tc
+/control/alias x_placement  20.0
+/control/alias CollimatorMaterial  Lead
+/control/alias CrystalMaterial  NaI
+/control/alias PhantomMaterial  Plexiglass
+/control/alias PhanRmax  50.0 mm
+/control/alias PhanRmin  49.5 mm
+/control/alias SourceVolMaterial  Plexiglass
+/control/alias SourceType  sources_gamma_3
+/control/alias SourceEnergy  140 keV
+/control/alias RootFileName  Gamma_Camera_{SourceType}
