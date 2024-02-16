@@ -1,0 +1,12 @@
+<gxml>
+
+	<volume name="Upper_GI" 
+	color="b22222" 
+	material="G4_TISSUE_SOFT_ICRU-4"
+ 	position="0.*cm -55.*cm 0.*cm"	
+        rotation="90*deg 0*deg 0*deg"
+	sensitivity="flux" 
+	hitType="flux" 
+	identifiers="id manual 1"/>
+
+</gxml>

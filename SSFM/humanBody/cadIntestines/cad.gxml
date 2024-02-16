@@ -1,0 +1,11 @@
+<gxml>
+
+	<volume name="Lower_GI" 
+	color="cd5c5c" 
+	material="G4_TISSUE_SOFT_ICRU-4"
+ 	position="0.*cm -50.*cm 8.3*cm"	
+        rotation="-90*deg 180*deg 0*deg"
+
+	identifiers="id manual 1"/>
+
+</gxml>
