@@ -1,0 +1,12 @@
+/control/alias ViewPointThetaPhi  0 90
+/control/alias VisuOnOff  visu
+/control/alias SourceActivity  1000. Bq
+/control/alias Nb_Detectors  64
+/control/alias CrystalMaterial  LSO
+/control/alias PhantomMaterial  Water
+/control/alias PhanRmax  18 mm
+/control/alias PhanRmin  13 mm
+/control/alias Phan_Source_Pos  0.0 0.0 0.0 mm
+/control/alias SourceVolMaterial  Water
+/control/alias SourceEnergy  511 keV
+/control/alias RootFileName  Coin_Chan_{Nb_Detectors}_{PhantomMaterial}
