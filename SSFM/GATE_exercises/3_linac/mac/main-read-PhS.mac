@@ -62,7 +62,7 @@
 
 # /gate/geometry/setMaterialDatabase data/PreciseMaterials.db
 # /control/execute mac/linac_head.mac
-/gate/linac/placement/setTranslation 0 0 1000 mm
+#/gate/linac/placement/setTranslation 0 0 1000 mm
 
 /gate/linac/daughters/name               PhS_Plane
 /gate/linac/daughters/insert             cylinder
@@ -148,5 +148,5 @@
 
 #/tracking/verbose 2
 
-/gate/application/setTotalNumberOfPrimaries 50000
+/gate/application/setTotalNumberOfPrimaries 500000
 /gate/application/start
