@@ -51,7 +51,7 @@
 #=====================================================
 
 /gate/actor/addActor                        DoseActor  depthdose
-/gate/actor/depthdose/save                  output/gamma-depth.txt
+/gate/actor/depthdose/save                  output/gamma-depth.mhd
 /gate/actor/depthdose/attachTo    	    waterbox
 /gate/actor/depthdose/stepHitType           random
 /gate/actor/depthdose/setPosition           0 0 0 cm
@@ -59,12 +59,26 @@
 /gate/actor/depthdose/saveEveryNSeconds     60
 /gate/actor/depthdose/enableEdep            true
 /gate/actor/depthdose/enableUncertaintyEdep true
-/gate/actor/depthdose/enableDose            false
-/gate/actor/depthdose/enableUncertaintyDose false
-/gate/actor/depthdose/enableNumberOfHits    false
+/gate/actor/depthdose/enableDose            true
+/gate/actor/depthdose/enableUncertaintyDose true
+/gate/actor/depthdose/enableNumberOfHits    true
+
+/gate/actor/addActor                         DoseActor  depthdose2
+/gate/actor/depthdose2/save                  output/gamma-depth2.root
+/gate/actor/depthdose2/attachTo              waterbox
+/gate/actor/depthdose2/stepHitType           random
+/gate/actor/depthdose2/setPosition           0 0 0 cm
+/gate/actor/depthdose2/setResolution         1 1 100
+/gate/actor/depthdose2/saveEveryNSeconds     60
+/gate/actor/depthdose2/enableEdep            true
+/gate/actor/depthdose2/enableUncertaintyEdep true
+/gate/actor/depthdose2/enableDose            true
+/gate/actor/depthdose2/enableUncertaintyDose true
+/gate/actor/depthdose2/enableNumberOfHits    true
+
 
 /gate/actor/addActor                          DoseActor  doseprofile
-/gate/actor/doseprofile/save                  output/gamma-profile.txt
+/gate/actor/doseprofile/save                  output/gamma-profile.mhd
 /gate/actor/doseprofile/attachTo    	      waterbox
 /gate/actor/doseprofile/stepHitType           random
 /gate/actor/doseprofile/setPosition           0 0 4 cm
@@ -73,14 +87,13 @@
 /gate/actor/doseprofile/saveEveryNSeconds     60
 /gate/actor/doseprofile/enableEdep            true
 /gate/actor/doseprofile/enableUncertaintyEdep true
-/gate/actor/doseprofile/enableDose            false
-/gate/actor/doseprofile/enableUncertaintyDose false
-/gate/actor/doseprofile/enableNumberOfHits    false
+/gate/actor/doseprofile/enableDose            true
+/gate/actor/doseprofile/enableUncertaintyDose true
+/gate/actor/doseprofile/enableNumberOfHits    true
 
 /gate/actor/addActor               SimulationStatisticActor stat
 /gate/actor/stat/save              output/gamma-stat.txt
 /gate/actor/stat/saveEveryNSeconds 60
-
 
 #=====================================================
 # INITIALISATION
@@ -123,5 +136,5 @@
 #/tracking/verbose 1
 
 /gate/application/noGlobalOutput
-/gate/application/setTotalNumberOfPrimaries 10000
+/gate/application/setTotalNumberOfPrimaries 100000
 /gate/application/start
