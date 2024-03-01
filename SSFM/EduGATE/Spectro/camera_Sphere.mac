@@ -1,0 +1,72 @@
+#
+#	C A M E R A
+#
+
+#	Type: scanner
+
+
+/gate/world/daughters/name 				scanner
+/gate/world/daughters/insert 			box
+/gate/scanner/geometry/setXLength  		20. cm
+/gate/scanner/geometry/setYLength 		20. cm
+/gate/scanner/geometry/setZLength 		20. cm
+/gate/scanner/placement/setTranslation 	0. 0. 0. cm
+/gate/scanner/setMaterial 				Vacuum
+/gate/scanner/vis/setColor 				white
+/gate/scanner/vis/forceWireframe
+/gate/scanner/vis/setVisible			0
+
+#
+# useful configurations are:
+
+# 1)
+# RepeatNr 36 - > wedges of 10°
+# digitizer: /gate/digitizer/Singles/readout/setDepth				2
+# Source: I 124 - good peak separation
+# attach level 2 - crystal
+
+# 2)
+# RepeatNr 1 - > single spherical crystal
+# digitizer: /gate/digitizer/Singles/readout/setDepth				2
+# Source: I 124 - many "summation peaks"
+# attach level 2 - crystal
+
+# CRYSTAL
+# Create the crystal volume
+
+/gate/scanner/daughters/name 			crystal
+/gate/scanner/daughters/insert			sphere
+/gate/crystal/geometry/setRmax			120 mm
+/gate/crystal/geometry/setRmin			90 mm
+
+/gate/crystal/geometry/setPhiStart		0.0 deg
+/gate/crystal/geometry/setDeltaPhi		360.0 deg
+
+#/gate/crystal/geometry/setThetaStart	{CrystalTheStart}
+#/gate/crystal/geometry/setDeltaTheta	{CrystalDeltaThe}
+
+/gate/crystal/setMaterial				{CrystalMaterial}
+
+/gate/crystal/repeaters/insert 			ring 
+/gate/crystal/ring/setRepeatNumber		1
+/gate/crystal/ring/setPoint1 			0. 0. 0. mm 
+/gate/crystal/ring/setPoint2 			0. 0. 1. mm 
+
+
+#/gate/crystal/
+
+/gate/crystal/vis/setColor				yellow
+/gate/crystal/vis/setVisible			1
+#/gate/crystal/vis/forceWireframe
+/gate/crystal/vis/forceSolid
+
+/control/alias camID Sph
+
+/gate/systems/scanner/level2/attach 	crystal
+
+/gate/crystal/attachCrystalSD
+
+/gate/scanner/attachPhantomSD
+
+/gate/systems/scanner/describe
+

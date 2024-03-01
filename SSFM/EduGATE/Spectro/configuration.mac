@@ -1,0 +1,19 @@
+/control/alias CameraType  camera_2heads
+/control/alias ViewPointThetaPhi  45 45
+/control/alias VisuOnOff  novisu
+/control/alias SourceActivity  1000. Bq
+/control/alias SourceType ion_In111
+/control/alias Ion_A_val 111
+/control/alias Ion_Z_val 49
+/control/alias SourceType  ion_universal
+/control/alias RootFileName  Spectro_{SourceType}_{Ion_Z_val}_{Ion_A_val}
+/control/alias CrystalMaterial  NaI
+/control/alias SourceRad  0.1 mm
+/control/alias PhanRmax  15.0 mm
+/control/alias PhanRmin  4.0 mm
+/control/alias PhantomMaterial  Water
+/control/alias SourceVolMaterial  Water
+/control/alias X_placement  0.0 mm
+/control/alias CollimatorMaterial  Air
+/control/alias SourceVolRmax  3.0 mm
+/control/alias SourceVolRmin  0.0 mm
