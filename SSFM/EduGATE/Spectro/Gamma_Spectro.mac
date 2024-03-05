@@ -96,7 +96,7 @@
 
 #	S T A R T 
 
-/vis/disable 
+#/vis/disable 
 
 /gate/application/setTimeSlice		1.0	s
 /gate/application/setTimeStart		0.0	s

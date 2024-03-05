@@ -13,13 +13,16 @@
 
 /vis/viewer/zoom					2.
 #/vis/viewer/pan 					0.06 0.0
+/vis/geometry/set/colour Phantom_log !  1. 0.6 0.8 1
+/vis/geometry/set/colour crystal_log !  0.68 0.85 0.90 0.5
+
 /vis/drawVolume
 /vis/viewer/flush
 #/tracking/verbose 					0
 /tracking/storeTrajectory 			1
 #/tracking/storeTrajectory 			0
 /vis/scene/add/trajectories
-#/vis/scene/add/hits
-/vis/scene/endOfEventAction 		accumulate 20
+/vis/scene/add/hits
+/vis/scene/endOfEventAction 		accumulate 50
 #/vis/scene/endOfRunAction 			accumulate
 #/vis/viewer/update

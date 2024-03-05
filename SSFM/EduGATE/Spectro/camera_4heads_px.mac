@@ -49,7 +49,7 @@
 /gate/pixel/geometry/setZLength  				1. cm
 /gate/pixel/placement/setTranslation  			0. 0. 0. cm
 /gate/pixel/setMaterial 						{CrystalMaterial}
-/gate/pixel/vis/setColor 						blue
+/gate/pixel/vis/setColor 					cyan
 #/gate/pixel/vis/forceWireframe
 /gate/pixel/vis/forceSolid						1
 

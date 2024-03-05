@@ -4,8 +4,8 @@
 
 /gate/digitizer/Singles/insert adder
 
-/gate/digitizer/Singles/insert							readout
-/gate/digitizer/Singles/readout/setDepth				2
+/gate/digitizer/Singles/insert			readout
+/gate/digitizer/Singles/readout/setDepth        1
 
 /gate/digitizer/Singles/insert blurring
 /gate/digitizer/Singles/blurring/setResolution 0.10

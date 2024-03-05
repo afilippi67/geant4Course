@@ -8,8 +8,10 @@
 /gate/world/daughters/insert 				sphere
 /gate/Phantom/geometry/setRmax 				{PhanRmax}
 /gate/Phantom/geometry/setRmin 				{PhanRmin}
-/gate/Phantom/placement/setTranslation 		0. 0. 0. cm
-/gate/Phantom/setMaterial 					{PhantomMaterial}
+#/gate/Phantom/geometry/setThetaStart              90. deg
+#/gate/Phantom/geometry/setDeltaTheta              90. deg
+/gate/Phantom/placement/setTranslation 		  0. 0. 0. cm
+/gate/Phantom/setMaterial 			  {PhantomMaterial}
 /gate/Phantom/vis/setColor 					yellow
 #/gate/Phantom/vis/forceWireframe
 /gate/Phantom/vis/forceSolid
@@ -20,8 +22,8 @@
 
 /gate/world/daughters/name 					source_vol
 /gate/world/daughters/insert 				sphere
-/gate/source_vol/geometry/setRmax 			10.0  mm
-/gate/source_vol/geometry/setRmin 			0.0 mm
+/gate/source_vol/geometry/setRmax 			{SourceVolRmax}  
+/gate/source_vol/geometry/setRmin 			{SourceVolRmin} 
 /gate/source_vol/placement/setTranslation 	0. 0. 0. mm
 /gate/source_vol/setMaterial 				{SourceVolMaterial}
 /gate/source_vol/vis/setColor 				white
