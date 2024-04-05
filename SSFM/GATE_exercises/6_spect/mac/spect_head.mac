@@ -15,9 +15,9 @@
 /gate/SPECThead/geometry/setZLength 18 cm
 /gate/SPECThead/placement/setRotationAxis  1 0 0
 /gate/SPECThead/placement/setRotationAngle -90 deg
-/gate/SPECThead/vis/setColor white
 /gate/SPECThead/setMaterial Air
 /gate/SPECThead/vis/forceWireframe
+/gate/SPECThead/vis/setColor magenta
 
 # Shielding: main volume
 /gate/SPECThead/daughters/name shielding
@@ -27,8 +27,8 @@
 /gate/shielding/geometry/setZLength 11.1375 cm
 /gate/shielding/placement/setTranslation 0. 0. -3.64 cm
 /gate/shielding/setMaterial Steel
-/gate/shielding/vis/setColor red
 /gate/shielding/vis/forceWireframe
+/gate/shielding/vis/setColor red
 
 
 # Shielding: first layer of the lead cover
@@ -39,6 +39,7 @@
 /gate/shielding_lead_cover/geometry/setZLength  10.1375 cm
 /gate/shielding_lead_cover/placement/setTranslation 0. 0. 0.5 cm
 /gate/shielding_lead_cover/setMaterial Lead
+/gate/shielding_lead_cover/vis/setColor grey
 /gate/shielding_lead_cover/vis/forceWireframe
 
 
@@ -91,3 +92,4 @@
 /gate/shielding_backside/geometry/setZLength  8. cm
 /gate/shielding_backside/placement/setTranslation 0. 0. -0.76875 cm
 /gate/shielding_backside/setMaterial Pyrex66
+/gate/shielding_backside/vis/setColor cyan

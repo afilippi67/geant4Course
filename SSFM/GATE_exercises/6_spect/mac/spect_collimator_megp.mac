@@ -54,7 +54,7 @@
 /gate/collimator_pvc_layer/placement/setTranslation 0. 0. 3.065 cm
 /gate/collimator_pvc_layer/setMaterial PVC
 /gate/collimator_pvc_layer/vis/setColor red
-#/gate/collimator_pvc_layer/vis/forceWireframe
+/gate/collimator_pvc_layer/vis/forceWireframe
 
 
 # Collimator: air gap
@@ -66,7 +66,7 @@
 /gate/collimator_air_gap/placement/setTranslation 0. 0. 2.80 cm
 /gate/collimator_air_gap/setMaterial Air
 /gate/collimator_air_gap/vis/setColor blue
-#/gate/collimator_air_gap/vis/forceWireframe
+/gate/collimator_air_gap/vis/forceWireframe
 
 
 # Collimator: core
@@ -77,8 +77,8 @@
 /gate/collimator_core/geometry/setZLength 5.8 cm
 /gate/collimator_core/placement/setTranslation 0. 0. -0.29 cm
 /gate/collimator_core/setMaterial Lead
-/gate/collimator_core/vis/setColor blue
-#/gate/collimator_core/vis/forceWireframe
+/gate/collimator_core/vis/setColor grey
+/gate/collimator_core/vis/forceWireframe
 
 
 # Collimator: holes
@@ -88,6 +88,8 @@
 /gate/collimator_hole/geometry/setHeight 5.8 cm
 /gate/collimator_hole/geometry/setRadius 0.15 cm
 /gate/collimator_hole/setMaterial Air
+/gate/collimator_hole/vis/setColor red
+/gate/collimator_hole/vis/forceWireframe
 
 # Repeat the first hole in an array
 /gate/collimator_hole/repeaters/insert cubicArray
