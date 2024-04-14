@@ -1,0 +1,11 @@
+/gate/source/addSource mybeam gps
+
+/gate/source/mybeam/gps/particle gamma
+/gate/source/mybeam/gps/pos/type Beam
+/gate/source/mybeam/gps/pos/shape Circle
+/gate/source/mybeam/gps/pos/centre 0 0 20 cm
+/gate/source/mybeam/gps/pos/radius 8 mm
+/gate/source/mybeam/gps/ene/mono 1 MeV
+
+/gate/source/mybeam/gps/ang/type focused
+/gate/source/mybeam/gps/ang/focuspoint 0 0 10 cm

@@ -1,0 +1,74 @@
+#=====================================================
+# VERBOSITY (general)
+#=====================================================
+
+/control/execute mac/verbose.mac
+
+#=====================================================
+# MATERIALS DB
+#=====================================================
+
+/gate/geometry/setMaterialDatabase data/GateMaterials.db
+
+#=====================================================
+# WORLD GEOMETRY
+#=====================================================
+
+/gate/world/geometry/setXLength 1 m
+/gate/world/geometry/setYLength 1 m
+/gate/world/geometry/setZLength 1 m
+/gate/world/setMaterial Air
+
+#=====================================================
+# SETUP GEOMETRY
+#=====================================================
+
+/control/execute mac/geometrySetup.mac 
+
+#=====================================================
+# PHYSICS
+#=====================================================
+
+/control/execute mac/physicsProcesses.mac 
+
+#=====================================================
+# DETECTORS: EXTRACT INFOS FROM THE SIMULATION 
+#=====================================================
+
+/control/execute mac/defineActors.mac 
+
+#=====================================================
+# INITIALISATION
+#=====================================================
+
+/gate/run/initialize
+
+# Enable the following lines to display available and enabled processes
+# /gate/physics/processList Available
+# /gate/physics/processList Enabled
+
+
+#=====================================================
+# SOURCES 
+#=====================================================
+
+/control/execute mac/defineSource.mac 
+
+#=====================================================
+# VISUALISATION (IF REQUIRED)
+#=====================================================
+
+#/control/execute mac/visu.mac
+
+#=====================================================
+# SET SIMULATION FEATURES
+#=====================================================
+
+/control/execute mac/setSimulation.mac
+
+#=====================================================
+# START SIMULATION
+#=====================================================
+
+/gate/application/setTotalNumberOfPrimaries 1000
+/gate/application/start

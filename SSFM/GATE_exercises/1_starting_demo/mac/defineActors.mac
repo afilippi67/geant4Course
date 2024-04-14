@@ -1,0 +1,13 @@
+/gate/actor/addActor                  DoseActor  det
+/gate/actor/det/save                  output/output.txt
+/gate/actor/det/attachTo    	      detector
+/gate/actor/det/stepHitType           random
+/gate/actor/det/setResolution         100 100 1
+/gate/actor/det/enableEdep            true
+/gate/actor/det/enableUncertaintyEdep false
+/gate/actor/det/enableDose            false
+/gate/actor/det/enableUncertaintyDose false
+/gate/actor/det/enableNumberOfHits    true
+
+/gate/actor/addActor               SimulationStatisticActor stat
+/gate/actor/stat/save              output/stat.txt
